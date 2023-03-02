@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF=8">
+    <meta http-equiv="X-UA-Compatibile" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cubing Plus Ultra</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    
+    
+    <style>
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #002244;
+            
+            
+        }
+        .navbar {
+            align-items: center;  
+            background-color: #002244;
+            position: relative;
+            width: 100%;
+        }
+        .navbar a {
+            padding: 10px 10px 18px 32px;
+            color: #F7F9F8;
+            text-decoration: none;
+            font-size: 35px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            display: block;
+            transition: 0.3s;
+            margin-right: 35px;
+            
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #002244;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+        .sidenav a:hover {
+            color: white;
+            text-decoration: none;
+
+        }
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            font-size: 55px;
+            font-weight: bold;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+        .headline {
+            text-align: center;
+            flex: 1;
+        }
+        .headline a:hover {
+            color: white;
+        }
+        
+       
+    </style>
+
+       
+
+</head>
+<body>
+    <div class="navbar">
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <br/><br/>
+            
+
+            <a href="2X2_algs.html" style="text-align: center;">2X2</a>
+            <a href="3X3_algs.html" style="text-align: center;">3X3</a>
+            <a href="4X4_algs.html" style="text-align: center;">4X4</a>
+            <a href="5X5_algs.html" style="text-align: center;">5X5</a>
+            <a href="pyra_algs.html" style="text-align: center;">Pyraminx</a>
+            <a href="square-1.html" style="text-align: center;">Square-1</a>
+        </div>
+            <span style="font-size:45px;cursor:pointer; color: #F7F9F8; margin-left: 10px; margin-bottom: 25px;" onclick="openNav()">&#9776; </span>
+        <h1 class="headline">
+            <a href="index.html"><span style="font-size: 45px; color: #F7F9F8;">Cubing Plus Ultra</span></a>
+        </h1> 
+    </div>    
+    
+        
+        
+           
+</body>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+    <script href="./bootstrap/js/bootstrap.js"></script>
+
+</html>
